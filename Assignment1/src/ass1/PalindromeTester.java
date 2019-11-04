@@ -18,7 +18,7 @@ public class PalindromeTester {
 		while(sc.hasNext())
 		{
 			line = sc.next();
-			process(line);
+			process(verify(line));
 		}
 	}
 	
@@ -48,6 +48,11 @@ public class PalindromeTester {
 		{
 			System.out.println(line + " -- " + "is not a palindrome.");
 		}
+	}
+	
+	public static String verify(String s1)
+	{
+		return s1.toUpperCase();
 	}
 
 }

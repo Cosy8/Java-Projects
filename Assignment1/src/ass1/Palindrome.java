@@ -45,11 +45,9 @@ public class Palindrome {
 	 */
 	public boolean isMirrored(String l2)
 	{
-		char c;		//	Holds a char from the string for comparing.
-		
 		//	Loop to compare characters starting with the first and 
 		//	last and working it's way in.
-		for (int i = 0; i < l2.length()/2; i++)
+		for (int i = 0; i <= l2.length()/2; i++)
 		{
 			//	Switch case to determine if the char is a certain 
 			//	subset of characters.
@@ -58,66 +56,108 @@ public class Palindrome {
 				case 'A': 
 					if (l2.charAt(l2.length() - 1 - i) == 'A')
 						break;
+					else
+						return false;
 				case 'E': 
 					if (l2.charAt(l2.length() - 1 - i) == '3')
 						break;
+					else
+						return false;
 				case 'H': 
 					if (l2.charAt(l2.length() - 1 - i) == 'H')
 						break;
+					else
+						return false;
 				case 'I': 
 					if (l2.charAt(l2.length() - 1 - i) == 'I')
 						break;
+					else
+						return false;
 				case 'J': 
 					if (l2.charAt(l2.length() - 1 - i) == 'L')
 						break;
+					else
+						return false;
 				case 'L': 
 					if (l2.charAt(l2.length() - 1 - i) == 'J')
 						break;
+					else
+						return false;
 				case 'M': 
 					if (l2.charAt(l2.length() - 1 - i) == 'M')
 						break;
+					else
+						return false;
 				case 'O': 
 					if (l2.charAt(l2.length() - 1 - i) == 'O')
 						break;
+					else
+						return false;
 				case 'S': 
 					if (l2.charAt(l2.length() - 1 - i) == '2')
 						break;
+					else
+						return false;
 				case 'T': 
 					if (l2.charAt(l2.length() - 1 - i) == 'T')
 						break;
+					else
+						return false;
 				case 'U': 
 					if (l2.charAt(l2.length() - 1 - i) == 'U')
 						break;
+					else
+						return false;
 				case 'V': 
 					if (l2.charAt(l2.length() - 1 - i) == 'V')
 						break;
+					else
+						return false;
 				case 'W': 
 					if (l2.charAt(l2.length() - 1 - i) == 'W')
 						break;
+					else
+						return false;
 				case 'X': 
 					if (l2.charAt(l2.length() - 1 - i) == 'X')
 						break;
+					else
+						return false;
 				case 'Y': 
 					if (l2.charAt(l2.length() - 1 - i) == 'Y')
 						break;
+					else
+						return false;
 				case 'Z': 
 					if (l2.charAt(l2.length() - 1 - i) == '5')
 						break;
+					else
+						return false;
 				case '1': 
 					if (l2.charAt(l2.length() - 1 - i) == '1')
 						break;
+					else
+						return false;
 				case '2': 
 					if (l2.charAt(l2.length() - 1 - i) == 'S')
 						break;
+					else
+						return false;
 				case '3': 
 					if (l2.charAt(l2.length() - 1 - i) == 'E')
 						break;
+					else
+						return false;
 				case '5': 
 					if (l2.charAt(l2.length() - 1 - i) == 'Z')
 						break;
+					else
+						return false;
 				case '8': 
 					if (l2.charAt(l2.length() - 1 - i) == '8')
 						break;
+					else
+						return false;
 				default:
 					return false;	//	if not those characters or if corresponding positions do not match.
 			}
